@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      html, body {margin: 0;height: 100%;overflow: hidden;}
+      .hidden{
+         display: none !important;
+      }
+      h1{
+         color: white;
+         font-size: 64px;
+      }
+      .winner{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: absolute;
+         z-index: 1;
+         height: 100vh;
+         width: 100vw;
+      }
+      .winner2 {
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         position: absolute;
+         z-index: 1;
+         height: 120vh;
+         width: 100vw;
+      }
+   </style>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+   <title>autoMaze</title>
+</head>
+<body>
+   <div class="winner hidden">
+      <h1>YOU WIN !!!</h1>
+   </div>
+   <div class="winner2 hidden">
+      <button onClick="refreshPage()">PLAY AGAIN !!!</button>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
