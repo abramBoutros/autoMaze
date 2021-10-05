@@ -287,7 +287,7 @@ Events.on(engine, 'collisionStart', event => {
 // reset the velocity after every click 
 document.addEventListener('keyup', () =>{
    const {x, y} = ball.velocity;
-   Body.setVelocity(ball, {x:0.2,y:0.2} )
+   Body.setVelocity(ball, {x:0,y:0} )
 });
 
 function refreshPage(){
