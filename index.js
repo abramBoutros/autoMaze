@@ -44,10 +44,10 @@ Runner.run(Runner.create(), engine);
 // walls
 const walls = [
    // make 4 recs => x(centre), y(centre), width, height, {body status}
-   Bodies.rectangle(width/2, 0   ,width, 2 , { isStatic: true})  ,
-   Bodies.rectangle(width/2, height ,width, 2 , { isStatic: true})  ,
-   Bodies.rectangle(0      , height/2 ,2 , height, { isStatic: true})  ,
-   Bodies.rectangle(width, height/2 ,2 , height, { isStatic: true})
+   Bodies.rectangle(width/2, -height/2   ,width, height , { isStatic: true})  , //up
+   Bodies.rectangle(width/2, height*1.5 ,width, height , { isStatic: true})  , //down
+   Bodies.rectangle(-width/2      , height/2 ,width , height, { isStatic: true})  ,//left
+   Bodies.rectangle(width*1.5, height/2 ,width  , height, { isStatic: true}) //right
 ];
 World.add(world, walls);
 
