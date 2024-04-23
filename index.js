@@ -11,8 +11,8 @@ const { world } = engine;
 
 
 // global vars
-const cellsHorizontal = 24;
-const cellsVertical = 18;
+const cellsHorizontal = 12;
+const cellsVertical = 9;
 
 // declaring the width and height of the canvass window
 const width = window.innerWidth;
